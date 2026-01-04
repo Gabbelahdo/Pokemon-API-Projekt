@@ -1,0 +1,68 @@
+
+
+/*bakgrundsfärg sätts och font för text*/
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #3c5aa6;
+}
+
+/*sökfältets storlek sätts och border på den blir svart, och lite rundad */
+.sök-fält{
+padding: 5px 100px;
+margin-right: 10px;
+border: 2px solid black;
+border-radius: 5px;
+
+
+}
+
+/*knappen får en färg, pekare när man hovrar med musen över den med */
+.submit-knapp{
+    
+    background-color: lightblue;
+    border: 0%;
+    cursor: pointer;
+    border-radius: 10%;
+    transition: 0,5s ease;
+    padding: 5px 10px;
+
+}
+
+.submit-knapp:hover{
+    transition: 1s;
+    background-color: aqua;
+    border: 20%;
+    border-color: black;
+    padding: 10px 15px;
+
+}
+/*pokemon inspirerad färg på varje element */
+.karaktär-namn{
+    background-color: #c7a008;
+    display: block; 
+    color: #3c5aa6;
+}
+
+
+p {
+    font-size: 20px;
+    background-color: #c7a008;
+    display: block; 
+    color: #3c5aa6;
+}
+/*felmeddelande får en naturlig röd färg */
+.error-msg {
+    font-size: 15px;
+    background-color: #3c5aa6;
+    color: red;    
+}
+/*anpassning för mobilskärmar*/
+@media (max-width: 600px){
+
+    .sök-fält {
+        padding: 5px 30px;
+        margin-right: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+}
